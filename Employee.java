@@ -1,9 +1,9 @@
-import java.util.Scanner;
+import java.util.scanner;
 class Employee
 {
 int empno,salary;
-String empname;
-Employee(int no,String name,int sal)
+String empno;
+Employee(int no,string name,int sal)
 {
 empno=no;
 empname=name;
@@ -11,7 +11,7 @@ salary=sal;
 }
 void display()
 {
-System.out.println("Employee number: "+empno+"\n Employee name: "+empname+"\n salary: "+salary);
+System.out.println("Employee number:"+empno+"\n Employee name:"+empname+"\n salary:"+salary);
 }
 }
 
@@ -21,19 +21,18 @@ public static void main(String[]args)
 {
 Scanner sc=new Scanner(System.in);
 System.out.print("Enter the number of employee:");
-int n=sc.nextInt();
 sc.nextLine();
 
 Employee[]emp=new Employee[n+1];
-for(int i=1;i<=n;i++)
+for(int i=1;i<n;i++)
 {
-System.out.println("Enter the details of employee: "+i);
+System.out.println("Enter the details of employee"+i);
 
 System.out.println("Emp_no");
 int no=sc.nextInt();
 
 System.out.println("Emp_name");
-String name=sc.next();
+string name=sc.next();
 sc.nextLine();
 
 System.out.println("salary");
@@ -45,7 +44,7 @@ System.out.print("Enter the emp_no to search:");
 int key=sc.nextInt();
 int found=0;
 
-for(int i=1;i<=n;i++)
+for(int i=1;i<n;i++)
 {
 if(emp[i].empno==key)
 {
